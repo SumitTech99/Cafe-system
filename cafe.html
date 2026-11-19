@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cafe System</title>
+        <link rel ="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class ="navbar">
+                <div class ="nav-logo border">
+                    <div class="logo"></div>
+                </div>
+                <div class="name">
+                    <h1>Code With Coffee</h1>
+                </div>
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+                        <input placeholder="Search Food" class="search-bar">                        
+                </div>
+                <div class="table">
+                    <p>Table Number</p>
+                    <select class="table">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="navbar2 ">
+                <a class="nv2" href="#dashboard">Dashboard</a>
+                <a class="nv2" href="#menu">Menu</a>
+                <a class="nv2" href="#your order">Your order</a>
+                <a class="nv2" href="#bill">Bill</a>
+                <a class="nv2" href="#about">About</a>
+
+            </div>
+            <section id="dashboard">
+            <div class="cafe-image">
+            </div>
+            </section>
+            <section id="menu">
+            <div class="menu-bar">
+                <h1>---Our Menu---</h1>
+            </div>
+            <div class="menu-item">
+                <div class="box1 box">
+                        <h4>Cappuccino</h4>
+                        <p>₹ 60</p>
+                        <div class="box-img" style="background-image: url('cap.jpeg');"></div>
+                        <button onclick="addOrder('Cappuccino',60)" class="addbtn" id="Cappuccino">+ Add Item</button>
+                </div>
+                <div class="box2 box">
+                        <h4>Americano</h4>
+                        <p>₹ 80</p>
+                        <div class="box-img" style="background-image: url('amercano.jpeg');"></div>
+                        <button onclick="addOrder('amercano',80)" class="addbtn" id="Americano">+ Add Item</button>
+                </div>
+                <div class="box3 box">
+                        <h4>latte</h4>
+                        <p>₹ 100</p>
+                        <div class="box-img" style="background-image: url('cold-coffee.jpeg');"></div>
+                        <button onclick="addOrder('latte',100)" class="addbtn" id="latte">+ Add Item</button>
+                </div>
+                <div class="box4 box">
+                        <h4>Mocha</h4>
+                        <p>₹ 150</p>
+                        <div class="box-img" style="background-image: url('img4.jpeg');"></div>
+                        <button onclick="addOrder('Mocha',150)" class="addbtn" id="Mocha">+ Add Item</button>
+                </div>
+            </div>
+            <div class="menu-item2">
+                <div class="box5 box">
+                        <h4>Espresso</h4>
+                        <p>₹ 120</p>
+                        <div class="box-img" style="background-image: url('cold-coffee.jpeg');"></div>
+                        <button onclick="addOrder('Espresso',120)" class="addbtn" id="Espresso">+ Add Item</button>
+                </div>
+                <div class="box6 box">
+                        <h4>Cold Coffee</h4>
+                        <p>₹ 50</p>
+                        <div class="box-img" style="background-image: url('cold-coffee2.jpeg');"></div>
+                        <button onclick="addOrder('cold coffee',50)" class="addbtn" id="cold coffee">+ Add Item</button>
+                </div>
+                <div class="box7 box">
+                        <h4>Oreo Cold Coffee</h4>
+                        <p>₹ 110</p>
+                        <div class="box-img" style="background-image: url('cold-coffee.jpeg');"></div>
+                        <button onclick="addOrder('oreo Cold Coffee',110)" class="addbtn" id="oreo cold coffee">+ Add Item</button>
+                </div>
+                <div class="box8 box">
+                        <h4>Mocha Cold Coffee</h4>
+                        <p>₹ 90</p>
+                        <div class="box-img" style="background-image: url('cold-coffee.jpeg');"></div>
+                        <button onclick="addOrder('Mocha Cold coffee',90)" class="addbtn" id="Mocha cold coffee">+ Add Item</button>
+                </div>
+            </div>
+            </section>
+            <section id="your order">
+            <div class="order-bar">
+                <h1>---Your Order---</h1>
+            </div>
+            <div class="order">
+                <h2 class="orderhead" id="msg">Order List</h2>
+                <h3 ><ul id="buttonlist"></ul></h3>
+
+            </div>
+            </section>
+            <search id="bill">
+            <div class="bill-bar">
+                <h1>Your Bill</h1>
+                
+            </div>
+            <div class="bill">
+                <h2>Your Orders</h2>
+                <div id="orderlist"></div>
+                <h2 id="total">total : ₹0 </h2>
+            </div>
+            </search>
+            <section id="about">
+            <div class="about">
+                <h1><u>About</u></h1>
+                <h3>Thank you for visiting our website.<br> We hope you enjoyed exploring our menu and discovering your favourite coffee,<br> refreshing drinks, and delicious snacks.
+Our goal is to make your online café experience simple, enjoyable, and convenient.<br>
+We look forward to serving you again!<br>
+Contact Us<br>
+<b>Email: codewithcoffee@gmail.com</b><br>
+Website: Code with Coffee<br>
+Follow us on Instagram and Facebook.<br>
+Thank You! Have a Great Day! ❤️<br>
+© 2026 Code with Coffee. All Rights Reserved.</h3><br>
+            </div>
+            </section>
+        </header>
+    </body>
+    <script src="work.js"></script>
+</html>
+
